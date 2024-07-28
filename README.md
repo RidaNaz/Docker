@@ -1,7 +1,7 @@
 # Docker Installation
 
 ## 1. Enable Virtualization
-* On your laptop/pc and press `esc`. (then got this)
+* On your laptop/pc and press `esc`. (then you got this)
 
 ![App Screenshot](/public/img-1.jpeg)
 
@@ -23,7 +23,7 @@
 
 - Congratulaions if virtualization is `enabled`!
 
-### Windows Features
+## 2. On Windows Features
 
 * Go to ***Windows*** then type "windows fetaures on or off", open it.
 
@@ -35,3 +35,6 @@
     - Virtual Machine Platform
     - Windows Hypervisor Platform
     - Windows Subsystem for Linux
+
+## 3. Install WSL
+
