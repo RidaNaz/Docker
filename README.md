@@ -15,9 +15,23 @@
 
 * Tick Virtualization Technology (Vtx)
 
-* **Then confirm that virtualizaion is enabled**
+* **Then confirm that 'virtualizaion is enabled'**
 
 - Right click  task bar and select **Task Manager**, then go to **Performance**
+
 ![App Screenshot](/public/img-4.jpg)
 
 - Congratulaions if virtualization is `enabled`!
+
+### Windows Features
+
+* Go to ***Windows*** then type "windows fetaures on or off", open it.
+
+![App Screenshot](/public/img-5.jpg)
+
+* Tick the following:
+    - Containers
+    - Hyper-V
+    - Virtual Machine Platform
+    - Windows Hypervisor Platform
+    - Windows Subsystem for Linux
