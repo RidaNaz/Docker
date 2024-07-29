@@ -38,3 +38,30 @@
 
 ## 3. Install WSL
 
+* type `powershell` in windows and right click it and choose `run as adminstrator`.
+
+![Ss](/public/img-6.jpg)
+
+* Run the following commands:
+    - wsl --list --online
+    - wsl --install -d Ubuntu-24.04
+
+* the you got the new terminal window.
+    - give username and password
+
+![Ss](/public/img-7.jpg)
+
+## 4. Upgrade version from WSL 1 to WSL 2
+
+![Ss](/public/img-8.jpg)
+
+* After checking that you have `version-1`, run the following commands:
+    - wsl --install
+    - wsl --set-version
+    - wsl --set-version Ubuntu-24.04 2
+
+* Run `wsl.exe --install` / `wsl.exe --update` (when WSL 2 requires an update to its kernel component)
+
+* Now, re-run the `wsl --set-version Ubuntu-24.04 2` for conversion and also run `wsl -l -v` to check the version.
+
+![Ss](/public/img-9.jpg)
