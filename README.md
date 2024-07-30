@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ridanaz&label=Profile%20views&color=0e75b6&style=flat" alt="ridanaz" /> </p>
 
-#                   Docker Installation
+# Docker Installation
 
 ## 1. Enable Virtualization (for 'HP')
 * On your laptop/pc and press `esc`. (then you got this page)  Press `f10` for **BIOS setup**
