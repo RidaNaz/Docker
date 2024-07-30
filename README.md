@@ -1,11 +1,11 @@
 # Docker Installation
 
-## 1. Enable Virtualization
+## 1. Enable Virtualization (for 'HP')
 * On your laptop/pc and press `esc`. (then you got this)
 
 ![App Screenshot](/public/img-1.jpeg)
 
-* Press `f10`
+* Press `f10` for **BIOS setup**
 
 ![App Screenshot](/public/img-2.jpeg)
 
@@ -65,3 +65,19 @@
 * Now, re-run the `wsl --set-version Ubuntu-24.04 2` for conversion and also run `wsl -l -v` to check the version.
 
 ![Ss](/public/img-9.jpg)
+
+## 5. Install Docker Dekstop
+
+[for downloading, visit:](https://www.docker.com/products/docker-desktop/)
+
+![Ss](/public/img-10.jpg)
+
+* After downloading the docker dekstop, install it and sign-in with your google account.
+
+* Finally, you got docker dekstop!
+
+![Ss](/public/img-13.jpg)
+
+### 6. ***Check docker version with `docker -v` and `docker version`***
+
+![Ss](/public/img-12.jpg)
