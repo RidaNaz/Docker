@@ -75,6 +75,7 @@
 * Finally, you got docker dekstop!
 
 ![Ss](/public/img-11.jpg)
+ 
 
 ### 6. ***Check docker version with `docker -v` and `docker version`***
 
