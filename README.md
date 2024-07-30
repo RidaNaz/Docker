@@ -1,19 +1,17 @@
 # Docker Installation
 
 ## 1. Enable Virtualization (for 'HP')
-* On your laptop/pc and press `esc`. (then you got this)
+* On your laptop/pc and press `esc`. (then you got this page)  Press `f10` for **BIOS setup**
 
 ![App Screenshot](/public/img-1.jpeg)
 
-* Press `f10` for **BIOS setup**
+* In `advance` section, go to `Device Configurations`
 
 ![App Screenshot](/public/img-2.jpeg)
 
-* Go to `Device Configurations`
+* Tick Virtualization Technology (Vtx)
 
 ![App Screenshot](/public/img-3.jpeg)
-
-* Tick Virtualization Technology (Vtx)
 
 * **Then confirm that 'virtualizaion is enabled'**
 
