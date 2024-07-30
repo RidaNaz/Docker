@@ -1,10 +1,10 @@
 <Image src="/Ridalogo.png" alt="logo" width="50" height="50" align="left"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&weight=500&size=25&duration=4000&pause=500&color=CFB53B&center=true&vCenter=true&width=665&height=55&lines=%E2%9C%A8Hey%2C+I'm+Rida+Naz%E2%9C%A8;%E2%9C%A8Passionate+Developer,+Designer,+Marketer%E2%9C%A8;%E2%9C%A8Follow+my+GitHub+Profile%E2%9C%A8)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&weight=500&size=25&duration=4000&pause=500&color=CFB53B&center=true&vCenter=true&width=665&height=55&lines=%E2%9C%A8Hey%2C+I'm+Rida+Naz%E2%9C%A8;%E2%9C%A8Install+Docker+with+Me%E2%9C%A8;%E2%9C%A8Rate+my+GitHub+Repository%E2%9C%A8)](https://git.io/typing-svg)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ridanaz&label=Profile%20views&color=0e75b6&style=flat" alt="ridanaz" /> </p>
 
-# Docker Installation
+<h1> Docker Installation <h1>
 
 ## 1. Enable Virtualization (for 'HP')
 * On your laptop/pc and press `esc`. (then you got this page)  Press `f10` for **BIOS setup**
