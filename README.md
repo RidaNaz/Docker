@@ -88,10 +88,10 @@
 ![Ss](/public/img-12.jpg)
 
 
-## 🔗 About Me
+## 🔗 Reach Me
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ridanaz67/)
 
-[![linkedin](https://img.shields.io/badge/linkedin-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/rida_naz67/)
+[![linkedin](https://img.shields.io/badge/Instagram-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/rida_naz67/)
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rida-portfolio-virid.vercel.app/)
