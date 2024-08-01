@@ -11,8 +11,12 @@ Open the Start menu, search for "Docker Desktop", and start the application.
 #### 2. Check Hidden Icons:
 Click the upward-pointing arrow (^) in the bottom-right corner of your screen to show hidden icons. Look for the Docker whale icon there.
 
+![Ss](/public/img-13.jpeg)
+
 #### 3. Restart Docker Desktop:
 If the Docker icon is visible, right-click it and select "Quit Docker Desktop". Then restart Docker Desktop from the Start menu.
+
+![Ss](/public/img-14.jpeg)
 
 #### 4. Add to Startup Programs:
 Open Docker Desktop, go to settings (gear icon), and in the "General" tab, check "Start Docker Desktop when you log in".
