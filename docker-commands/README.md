@@ -1,9 +1,15 @@
 # Some Docker Commands
 
-### Checking to see if Docker is running:
+### Check docker version:
 
 ```bash
 docker version
+```
+
+```bash
+docker -v
+# OR
+docker --version
 ```
 
 ### Test Docker Installation:
