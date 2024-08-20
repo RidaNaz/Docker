@@ -1,4 +1,4 @@
-<Image src="/Ridalogo.png" alt="logo" width="50" height="50" align="left"/>
+<Image src="/public/Ridalogo.png" alt="logo" width="50" height="50" align="left"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&weight=500&size=25&duration=4000&pause=500&color=CFB53B&center=true&vCenter=true&width=665&height=55&lines=%E2%9C%A8Hey%2C+I'm+Rida+Naz%E2%9C%A8;%E2%9C%A8Install+Docker+with+Me%E2%9C%A8;%E2%9C%A8Rate+my+GitHub+Repository%E2%9C%A8)](https://git.io/typing-svg)
 

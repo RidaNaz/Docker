@@ -29,6 +29,10 @@ docker build -f Dockerfile.dev -t my-dev-image .
 ```bash
 docker images
 ```
+
+```bash
+docker image ls
+```
 ### Verify the config:
 
 ```bash
