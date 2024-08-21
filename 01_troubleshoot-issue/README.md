@@ -6,4 +6,4 @@
 
 - ***Always 'quit Docker Desktop' from here to ensure all processes are 'properly stopped'.***
 
-![Ss](/01_troubleshoot-issue/public/quit-docker.jpg)
+![Ss](/01_troubleshoot-issue/quit-docker.jpg)
