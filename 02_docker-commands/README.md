@@ -16,6 +16,8 @@
 
     ```bash
     docker run hello-world
+
+    # It pulls the image of hello-world from the Docker Hub and run container on this image
     ```
 
 # 2. Docker Image Commands
@@ -67,7 +69,7 @@
 * ## Verify the config:
 
     ```bash
-    docker inspect my-dev-image
+    docker inspect <image-name/id>
     ```
 
 # 3. Docker Container Commands
@@ -128,12 +130,6 @@
     docker run -d -p 8000:8000 my-prod-image-optimized
     ```
 
-* ## container logs:
-
-    ```bash
-    docker logs dev-cont1
-    ```
-
 * ## Test the Container:
 
     ```bash
@@ -142,12 +138,43 @@
 
 * ## Intract with the Container:
 
+* while interacting with the container make sure that the container is running.
+
     ```bash
-    docker exec -it dev-cont1 /bin/bash
+    docker exec -it <container-id> /bin/bash
+
+    # -it flag is used to interact with the container
+    # /bin/bash shows the folder name in which you are in container
+    ```
+
+    ```bash
+    docker exec -it <container-id> sh
+
+    # sh works like /bin/bash but does not show the directory name
     ```
 
 * ## Exit from the container shell:
 
     ```bash
     exit
+
+    # After interacting with the container, you are in the container shell, to exit from it, run this command
+    ```
+
+* ## Container Logs:
+
+    ```bash
+    docker logs <container-id/name>
+    ```
+
+* ## Inspect Container:
+
+    ```bash
+    docker inspect <container-id/name>
+    ```
+
+* ## Container Statistics:
+
+    ```bash
+    docker stats <container-id/name>
     ```
