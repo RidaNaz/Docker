@@ -88,19 +88,19 @@
     # -a flag shows the list of all existing containers whether it is running or not
     ```
     
-* ## Start the Existing Container
+* ## Start the Existing Container:
 
     ```bash
     docker start <container-name/ id/ id(4-digits)>
     ```
 
-* ## Stop the Running Container
+* ## Stop the Running Container:
 
     ```bash
     docker stop <container-name/ id/ id(4-digits)>
     ```
     
-* ## Delete the Container
+* ## Delete the Container:
 
     ```bash
     docker rm <container-name/ id/ id(4-digits)>
@@ -113,6 +113,7 @@
     ```bash
     docker run -d --name dev-cont1 -p 8000:8000 <image-id/name>
     
+    # -d flag refers to the de-attach mode, means container run in the background
     # 8000:8000 [hosting port (changeable) : container port]
     ```
 
@@ -177,4 +178,56 @@
 
     ```bash
     docker stats <container-id/name>
+    ```
+
+# 4. Docker Volume Commands
+
+* ## Volume Documentation:
+
+    ```bash
+    docker volume --help
+    ```
+
+* ## List of all Volumes:
+
+    ```bash
+    docker volume ls
+    ```
+
+* ## Inspect Volume:
+
+    ```bash
+    docker volume inspect <volume-name>
+    ```
+
+* ## Create Volume:
+
+    ```bash
+    docker volume create <volume-name>
+    ```
+
+    ```bash
+    docker volume create --driver local \
+
+    # If you does not provide volume name, it gives random name to that volume
+    # By default the driver path is local, You also give you cloud path instead of local
+    ```
+
+* ## Use Volume in Container:
+
+- You can use the volume in a container after creating it.
+- When you delete container (that uses volume), only the container deletes not the volume.
+- Because the volume is of outside the container.
+
+    ```bash
+    docker run -d -v <volume-name>:</folder-name> --name <container-name> <image-name>
+
+    # -v flag refers to the existed volume to use in container
+    # :</folder-name> makes folder inside the volume
+    ```
+
+* ## Delete Volume:
+
+    ```bash
+    docker volume rm <volume-name>
     ```
