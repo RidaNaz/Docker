@@ -1,94 +1,130 @@
-# Some Docker Commands
+# 1. Docker Commands
 
-### Check docker version:
+* ## Check docker version:
 
-```bash
-docker version
-```
+    ```bash
+    docker version
+    ```
 
-```bash
-docker -v
-# OR
-docker --version
-```
+    ```bash
+    docker -v
+    # OR
+    docker --version
+    ```
 
-### Test Docker Installation:
+* ## Test Docker Installation:
 
-```bash
-docker run hello-world
-```
+    ```bash
+    docker run hello-world
+    ```
 
-### Building the Image for Dev:
+# 2. Docker Image Commands
 
-```bash
-docker build -f Dockerfile.dev -t my-dev-image .
-```
+* ## Building the Image for Dev:
 
-### Check Images:
+    ```bash
+    docker build -f Dockerfile.dev -t my-dev-image .
+    ```
 
-```bash
-docker images
-```
+* ## Check Images:
 
-```bash
-docker image ls
-```
-### Verify the config:
+    ```bash
+    docker images
+    ```
 
-```bash
-docker inspect my-dev-image
-```
+    ```bash
+    docker image ls
+    ```
+* ## Verify the config:
 
-###  Running the Container for Dev:
+    ```bash
+    docker inspect my-dev-image
+    ```
 
-```bash
-docker run -d --name dev-cont1 -p 8000:8000 my-dev-image
-```
+* ## Building fully optimized Image for Production:
 
-### container logs:
+    ```bash
+    docker build -f Dockerfile.prod -t my-prod-image-optimized .
+    ```
 
-```bash
-docker logs dev-cont1
-```
+# 3. Docker Container Commands
 
-### Test the Container:
+* ## List Running Containers:
 
-```bash
-docker run -it --rm my-dev-image /bin/bash -c "poetry run pytest"
-```
+    ```bash
+    docker ps
+    ```
 
-### List Running Containers:
+* ## List all Containers:
 
-```bash
-docker ps
-```
+    ```bash
+    docker ps -a
+    
+    # -a flag shows the list of all existing containers whether it is running or not
+    ```
+    
+* ## Start the Existing Container
 
-### List all Containers:
+    ```bash
+    docker start <container-name/ id/ id(4-digits)>
+    ```
 
-```bash
-docker ps -a
-```
+* ## Stop the Running Container
 
-### Intract with the Container:
+    ```bash
+    docker stop <container-name/ id/ id(4-digits)>
+    ```
+    
+* ## Delete the Container
 
-```bash
-docker exec -it dev-cont1 /bin/bash
-```
+    ```bash
+    docker rm <container-name/ id/ id(4-digits)>
 
-### Exit from the container shell:
+    # To delete or remove the container, make sure it is existed and stopped
+    ```
 
-```bash
-exit
-```
+* ##  Running the Container for Dev:
 
-### Building fully optimized Image for Production:
+    ```bash
+    docker run -d --name dev-cont1 -p 8000:8000 <image-id/name>
+    
+    # 8000:8000 [hosting port (changeable) : container port]
+    ```
 
-```bash
-docker build -f Dockerfile.prod -t my-prod-image-optimized .
-```
+* ##  Running the Temporary Container for Dev:
 
-### Running the Container for Production:
+    ```bash
+    docker run -d --rm --name dev-cont1 -p 8000:8000 <image-id/name>
+    
+    # --rm flag removes the container when we stop thats why it is called the temporary container
+    ```
 
-```bash
-docker run -d -p 8000:8000 my-prod-image-optimized
-```
+* ## Running the Container for Production:
+
+    ```bash
+    docker run -d -p 8000:8000 my-prod-image-optimized
+    ```
+
+* ## container logs:
+
+    ```bash
+    docker logs dev-cont1
+    ```
+
+* ## Test the Container:
+
+    ```bash
+    docker run -it --rm my-dev-image /bin/bash -c "poetry run pytest"
+    ```
+
+* ## Intract with the Container:
+
+    ```bash
+    docker exec -it dev-cont1 /bin/bash
+    ```
+
+* ## Exit from the container shell:
+
+    ```bash
+    exit
+    ```
