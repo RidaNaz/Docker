@@ -44,13 +44,13 @@ poetry run uvicorn <projectname>.main:app --reload
 
 - Open this URL in browser:
 
-![Ss](/05_fastapi-containerization/public/fastapi-container.jpg)
+![Ss](/04_fastapi-containerization/public/fastapi-container.jpg)
 
 ## 4. Create Dockerfile
 
 - Create a `Dockerfile` in the root of the project and write some commands.
 
-- [visit Dockerfile](/05_fastapi-containerization/Dockerfile)
+- [visit Dockerfile](/04_fastapi-containerization/Dockerfile)
 
 ## 5. Run Docker Engine
 
@@ -66,7 +66,7 @@ docker build -t <image-name> .
 
 - After running this command, open ***Docker Dekstop***, navigate to the `Images`and then you can see your image here:
 
-![Ss](/05_fastapi-containerization/public/docker-image2.jpg)
+![Ss](/04_fastapi-containerization/public/docker-image2.jpg)
 
 - You can also see your image from CLI by running this command:
 
@@ -90,7 +90,7 @@ docker run -d -p 8000:8000 --name <container-name> <image-id>
 
 - After running this you get some ID, now this means your container have run.
 
-![Ss](/05_fastapi-containerization/public/container-cli2.jpg)
+![Ss](/04_fastapi-containerization/public/container-cli2.jpg)
 
 - Run this command to see the list of Running Containers:
 
@@ -98,26 +98,26 @@ docker run -d -p 8000:8000 --name <container-name> <image-id>
 docker ps
 ```
 
-![Ss](/05_fastapi-containerization/public/container-cli3.jpg)
+![Ss](/04_fastapi-containerization/public/container-cli3.jpg)
 
 ## 8. Run and Create Container from Docker Dekstop
 
 - Open Docker Dekstop and navigate to the Images section from left bar.
 - Then click on play button to run the container.
 
-![Ss](/05_fastapi-containerization/public/fast-container.jpg)
+![Ss](/04_fastapi-containerization/public/fast-container.jpg)
 
 - After clicking, you get this window:
 
-![Ss](/05_fastapi-containerization/public/fast-container4.jpg)
+![Ss](/04_fastapi-containerization/public/fast-container4.jpg)
 
 - Give name to the container and you can also change the ***Host port*** from there:
 
-![Ss](/05_fastapi-containerization/public/fast-container2.jpg)
+![Ss](/04_fastapi-containerization/public/fast-container2.jpg)
 
 - After clicking on `Run`, the container will run:
 
-![Ss](/05_fastapi-containerization/public/fast-container3.jpg)
+![Ss](/04_fastapi-containerization/public/fast-container3.jpg)
 
 ## 9. Run Application in Browser
 

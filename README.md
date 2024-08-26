@@ -87,7 +87,7 @@
 
 ![Ss](/public/img-12.jpg)
 
-[If you facing an issue of Docker Desktop Not Opening from Desktop Icon](/01_troubleshoot-issue/README.md)
+[If you facing an issue of Docker Desktop Not Opening from Desktop Icon](/troubleshoot-issue/README.md)
 
 ## 🔗 Reach Me
 

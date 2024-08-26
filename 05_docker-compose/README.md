@@ -5,6 +5,7 @@
 - Maintain consistent environments across development, testing, and production.
 - Scale containers up or down as needed with minimal effort.
 - Keep all container configurations in a single, easy-to-manage docker `compose.yml` file.
+- Must visit [`compose.yaml`](/05_docker-compose/compose.yaml) file!
 
 # Docker Compose Commands
 

@@ -13,7 +13,7 @@ npx create-next-app@latest
 
 ## 3. Dockerfile
 
-- Visit [Dockerfile](/04_nextjs-containerization/Dockerfile) to see what to written.
+- Visit [Dockerfile](/03_nextjs-containerization/Dockerfile) to see what to written.
 
 ## 4. Run Docker Engine
 
@@ -29,7 +29,7 @@ docker build -t <image-name> .
 
 - After running this command, open ***Docker Dekstop***, navigate to the `Images`and then you can see your image here:
 
-![Ss](/04_nextjs-containerization/public/docker-image.jpg)
+![Ss](/03_nextjs-containerization/public/docker-image.jpg)
 
 - You can also see your image from CLI by running this command:
 
@@ -53,7 +53,7 @@ docker run -d -p 3000:3000 --name <container-name> <image-id>
 
 - After running this you get some ID, now this means your container have run.
 
-![Ss](/04_nextjs-containerization/public/container-cli.jpg)
+![Ss](/03_nextjs-containerization/public/container-cli.jpg)
 
 - Run this command to see the list of Running Containers:
 
@@ -66,19 +66,19 @@ docker ps
 - Open Docker Dekstop and navigate to the Images section from left bar.
 - Then click on play button to run the container.
 
-![Ss](/04_nextjs-containerization/public/container-dekstop.jpg)
+![Ss](/03_nextjs-containerization/public/container-dekstop.jpg)
 
 - After clicking, you get this window:
 
-![Ss](/04_nextjs-containerization/public/container-docker2.jpg)
+![Ss](/03_nextjs-containerization/public/container-docker2.jpg)
 
 - Give name to the container and you can also change the ***Host port*** from there:
 
-![Ss](/04_nextjs-containerization/public/container-docker3.jpg)
+![Ss](/03_nextjs-containerization/public/container-docker3.jpg)
 
 - After clicking on `Run`, the container will run:
 
-![Ss](/04_nextjs-containerization/public/container-docker4.jpg)
+![Ss](/03_nextjs-containerization/public/container-docker4.jpg)
 
 ## 8. Run Application in Browser
 

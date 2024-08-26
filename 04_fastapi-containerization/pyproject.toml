@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "05-fastapi-containerization"
+name = "04-fastapi-containerization"
 version = "0.1.0"
 description = ""
 authors = ["RidaNaz <rnaz3414@gmail.com>"]

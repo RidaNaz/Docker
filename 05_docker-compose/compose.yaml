@@ -1,0 +1,35 @@
+name: Rida Naz                            # (optional)
+
+# Container level
+services:
+  # service-1
+  myapp:                                  # service name
+    build: ./
+    container_name: fastapi-container
+    ports:
+      - "8000:8000"                       # [hosting port (changeable): container port (fastapi)]
+    networks:
+      - naz-net                           # connect the available network
+
+  # service-2
+  postgresdb:                             # service name
+    image: postgres:latest                # pull image from docker hub
+    restart: always                       # automatically restart when container crash until it runs
+    container_name: postgresdb-container
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust   # [key=value]
+    ports:
+      - "5432:5432"                       # [hosting port (changeable): container port (postgres)]
+    networks:
+      - naz-net                           # connect the available network
+    volumes:
+      - naz-db:/var/lib/postgresql/data  # define path (with no space) where data will store
+
+
+# Outside of a Container
+networks:
+  naz-net:                                # network name
+
+volumes:
+  naz-db:                                 # volume name
+    driver: local                         # locally create storage/volume
