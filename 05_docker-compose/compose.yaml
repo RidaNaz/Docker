@@ -10,20 +10,26 @@ services:
       - "8000:8000"                       # [hosting port (changeable): container port (fastapi)]
     networks:
       - naz-net                           # connect the available network
+    depends_on:
+      - postgresdb                        # mention that this service is depends on another service (service-2)
+                                          # It means that this service doesn't run until the service-2 run
 
   # service-2
   postgresdb:                             # service name
     image: postgres:latest                # pull image from docker hub
     restart: always                       # automatically restart when container crash until it runs
     container_name: postgresdb-container
+
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust   # [key=value]
+      # you can see other `env` variables of this image from docker hub
+
     ports:
       - "5432:5432"                       # [hosting port (changeable): container port (postgres)]
     networks:
       - naz-net                           # connect the available network
     volumes:
-      - naz-db:/var/lib/postgresql/data  # define path (with no space) where data will store
+      - naz-db:/var/lib/postgresql/data  # define path (without space) where data will store
 
 
 # Outside of a Container
