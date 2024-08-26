@@ -1,6 +1,20 @@
+name: Rida Naz
+
 services:
+  # service-1
   myapp:
     build: ./
     container_name: fastapi-container
     ports:
-      - "8000:8000"
+      - "8000:8000"                       # [hosting port (changeable): container port (fastapi)]
+
+  # service-2
+  postgresdb:                    
+    image: postgres:latest                # pull image from docker hub
+    restart: always                       # automatically restart when container crash until it runs
+    container_name: postgresdb-container
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust   # [key=value]
+    ports:
+      - "5432:5432"                       # [hosting port (changeable): container port (postgres)]
+    

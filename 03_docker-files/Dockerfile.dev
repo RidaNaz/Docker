@@ -1,7 +1,7 @@
 # Use an official Python runtime as a parent image
 FROM python:3.12
 
-LABEL maintainer="ameen-alam"
+LABEL maintainer="Rida Naz"
 
 # Set the working directory in the container
 WORKDIR /code

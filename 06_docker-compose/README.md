@@ -1,14 +1,10 @@
 # Docker Compose
 
-- **Simplify Multi-Container Applications:** Manage and run multiple containers with a single command.
-
-- **Automate Setup:** Automatically configure and link containers according to the defined services.
-
-- **Ensure Consistency:** Maintain consistent environments across development, testing, and production.
-
-- **Easily Scale Services:** Scale containers up or down as needed with minimal effort.
-
-- **Centralize Configuration:** Keep all container configurations in a single, easy-to-manage docker `compose.yml` file.
+- Manage and run multiple containers with a single command.
+- Automatically configure and link containers according to the defined services.
+- Maintain consistent environments across development, testing, and production.
+- Scale containers up or down as needed with minimal effort.
+- Keep all container configurations in a single, easy-to-manage docker `compose.yml` file.
 
 # Docker Compose Commands
 
@@ -22,11 +18,12 @@
 
     ```bash
     docker compose up -d
+    # -d : runs container in de-attach mode
     ```
 
 * ## Stop Running Container
 
-- It only stops the container, not remove.
+   It only stops the container, not remove.
 
     ```bash
     docker compose stop
@@ -40,8 +37,18 @@
 
 * ## Stop and Delete the Container
 
-- Stops and removes all the containers, networks, and volumes created by `docker compose up`.
+   Stops and removes all the containers, networks, and volumes created by `docker compose up`.
 
     ```bash
     docker compose down
     ```
+
+* ## Check Config of `compose.yaml`
+
+  - Ensures your `compose.yaml` is syntactically *correct* and *valid*.
+  - Helps identify issues in your configuration before you attempt to bring up the services.
+  - Outputs a fully expanded configuration, showing all default values and resolving variable interpolations.
+
+  ```bash
+  docker compose config
+  ```
