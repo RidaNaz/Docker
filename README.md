@@ -72,7 +72,7 @@
 
 ## 5. Install Docker Dekstop
 
-[for downloading, visit:](https://docs.docker.com/desktop/install/windows-install/)
+<a href="https://docs.docker.com/desktop/install/windows-install/" target="_blank">for downloading, visit:</a>
 
 ![Ss](/public/img-10.jpg)
 
